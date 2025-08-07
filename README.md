@@ -1,4 +1,4 @@
-# Proyecto Amigo Secreto
+# Proyecto Portafolio
 
 Proyecto para hacer un portafolio virtual. Se basa en los conocimientos adquiridos en cursos de HTML y CSS.
 
