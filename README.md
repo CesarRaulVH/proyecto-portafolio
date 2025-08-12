@@ -6,3 +6,4 @@ Proyecto para hacer un portafolio virtual. Se basa en los conocimientos adquirid
 
  - HTML y CSS: Ambientes de desarrollo, estructura de archivos y tags
  - HTML y CSS: Clases, posicionamiento y Flexbox
+ - HTML y CSS: header, footer y variables CSS

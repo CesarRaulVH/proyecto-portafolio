@@ -4,39 +4,55 @@
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Proyecto Portafolio</title>
-        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "./styles/style.css">
     </head>
 
-    <body>
-        <header></header>
+    <body class = "body">
+        <header class = "header">
+            <nav class = "header__menu">
+                <a class = "header__link" href = "./index.html">Hogar</a>
+                <a class = "header__link" href = "./about.html">Sobre mi</a>
+            </nav>
+        </header>
 
         <main class = "presentacion">
             <section class = "presentacion__contenido">
                 <section class = "presentacion__texto">
-                    <h1 class = "presentacion__titulo">
+                    <h1 class = "presentacion__titulo1">
                        Desarrollemos aplicaciones de calidad 
                         <strong class = "presentacion__titulo--destaque">con gran pasión!</strong>
                     </h1>
 
-                <p class = "presentacion__parrafo">
-                    ¡Hola! Soy César Raúl, estudiante de Ingeniería de 
-                    Sistemas de Información con experiencia en Java 
-                    y SQL. Me gusta desarrollar sistemas para ayudar 
-                    a las personas. ¿Hablamos?
-                </p>
+                    <p class = "presentacion__parrafo">
+                        ¡Hola! Soy César Raúl, estudiante de Ingeniería de 
+                        Sistemas de Información con experiencia en Java 
+                        y SQL. Me gusta desarrollar sistemas para ayudar 
+                        a las personas. ¿Hablamos?
+                    </p>
                 </section>
             
                 <section class = "presentacion__enlaces">
-                    <a class = "presentacion__link" href = "https://www.linkedin.com/in/cesar-raul-valdivia-huayllas/">LinkedIn</a>
-                    <a class = "presentacion__link" href = "https://github.com/CesarRaulVH/">GitHub</a>
+                    <h2 class = "presentacion__titulo2">Accede a mis redes</h2>
+
+                    <a class = "presentacion__link" 
+                    href = "https://www.linkedin.com/in/cesar-raul-valdivia-huayllas/">
+                    <img src = "./assets/linkedin.png" alt = "Icono de LinkedIn">
+                    LinkedIn</a>
+
+                    <a class = "presentacion__link" 
+                    href = "https://github.com/CesarRaulVH/">
+                    <img src = "./assets/github.png" alt = "Icono de GitHub">
+                    GitHub</a>
                 </section>
             </section>
             
             <section>
-                <img src = "foto-perfil.png" alt = "Foto profesional de César Raúl">
+                <img src = "./assets/foto-perfil.png" alt = "Foto profesional de César Raúl Valdivia Huayllas">
             </section>
         </main>
 
-        <footer></footer>
+        <footer class = "footer">
+            <p>Desarrollado por César Raúl</p>
+        </footer>
     </body>
 </html>
