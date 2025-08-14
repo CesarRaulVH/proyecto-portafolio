@@ -1,38 +1,73 @@
+<!-- Declaración del tipo de documento HTML5 -->
 <!DOCTYPE html>
+
+<!-- Elemento raíz del documento, idioma configurado a español (Perú) -->
 <html lang = "es-pe">
     <head>
+        <!-- Codificación de caracteres -->
         <meta charset = "UTF-8">
+
+        <!-- Configuración de la vista para dispositivos móviles -->
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        
+        <!-- Título de la pestaña del navegador -->
         <title>Sobre mí</title>
+
+        <!-- Enlace al archivo de estilos CSS -->
         <link rel = "stylesheet" href = "./styles/style.css">
     </head>
     
     <body class = "body">
+        <!-- Encabezado principal con menú de navegación -->
         <header class = "header">
             <nav class = "header__menu">
+                <!-- Enlace a la página de inicio -->
                 <a class = "header__link" href = "./index.html">Hogar</a>
+
+                <!-- Enlace a la página "Sobre mí" -->
                 <a class = "header__link" href = "./about.html">Sobre mi</a>
             </nav>
         </header>
 
+        <!-- Contenido principal de la página -->
         <main class = "presentacion">
             <section class = "presentacion__contenido">
+                <!-- Bloque de texto con información personal -->
                 <section class = "presentacion__texto">
+                    <!-- Título principal -->
                     <h1 class = "presentacion__titulo1">Sobre mí</h1>
 
+                    <!-- Párrafo de presentación personal -->
                     <p class = "presentacion__parrafo">
-                        Parrafo 1
+                        Soy estudiante de Ingeniería de Sistemas de Información, 
+                        motivado por el desarrollo de software funcional, comprensible 
+                        y orientado al usuario. Tengo experiencia en Java y SQL, y me 
+                        apasiona investigar cómo funcionan las aplicaciones, así como 
+                        mantenerme actualizado con las últimas tendencias en programación.
                     </p>
 
+                    <!-- Párrafo sobre habilidades y experiencia -->
                     <p class = "presentacion__parrafo">
-                        Parrafo 2
+                        En las experiencias en las que he participado, he demostrado 
+                        habilidades para el trabajo en equipo, la comunicación efectiva 
+                        y un alto nivel de aprendizaje continuo. Me destaco por ser 
+                        responsable, organizado y tener una mentalidad de crecimiento.
+                    </p>
+
+                    <!-- Párrafo sobre objetivos profesionales -->
+                    <p class = "presentacion__parrafo">
+                        Mi objetivo es seguir desarrollándome como programador, 
+                        participar en proyectos innovadores y contribuir en la creación 
+                        de soluciones tecnológicas centradas en el usuario.
                     </p>
                 </section>
             </section>
             
+            <!-- Imagen de perfil -->
             <img class = "presentacion__imagen" src = "./assets/foto-perfil.png" alt = "Foto profesional de César Raúl Valdivia Huayllas">
         </main>
 
+        <!-- Pie de página -->
         <footer class = "footer">
             <p>Desarrollado por César Raúl</p>
         </footer>

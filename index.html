@@ -1,28 +1,45 @@
+<!-- Declaración del tipo de documento HTML5 -->
 <!DOCTYPE html>
+
+<!-- Elemento raíz del documento, idioma configurado a español (Perú) -->
 <html lang = "es-pe">
     <head>
+        <!-- Codificación de caracteres -->
         <meta charset = "UTF-8">
+
+        <!-- Configuración de la vista para dispositivos móviles -->
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title>Proyecto Portafolio</title>
+        
+        <!-- Título de la pestaña del navegador -->
+        <title>Hogar</title>
+
+        <!-- Enlace al archivo de estilos CSS -->
         <link rel = "stylesheet" href = "./styles/style.css">
     </head>
 
     <body class = "body">
+        <!-- Encabezado principal con menú de navegación -->
         <header class = "header">
             <nav class = "header__menu">
+                <!-- Enlace a la página de inicio -->
                 <a class = "header__link" href = "./index.html">Hogar</a>
+
+                <!-- Enlace a la página "Sobre mí" -->
                 <a class = "header__link" href = "./about.html">Sobre mí</a>
             </nav>
         </header>
 
+        <!-- Contenido principal de la página -->
         <main class = "presentacion">
             <section class = "presentacion__contenido">
+                <!-- Bloque de texto de presentación -->
                 <section class = "presentacion__texto">
                     <h1 class = "presentacion__titulo1">
                        Desarrollemos aplicaciones de calidad 
                         <strong class = "presentacion__titulo--destaque">con gran pasión!</strong>
                     </h1>
 
+                    <!-- Descripción personal -->
                     <p class = "presentacion__parrafo">
                         ¡Hola! Soy César Raúl, estudiante de Ingeniería de 
                         Sistemas de Información con experiencia en Java 
@@ -31,14 +48,17 @@
                     </p>
                 </section>
             
+                <!-- Bloque con enlaces a redes sociales -->
                 <section class = "presentacion__enlaces">
                     <h2 class = "presentacion__titulo2">Accede a mis redes</h2>
 
+                    <!-- Enlace a perfil de LinkedIn -->
                     <a class = "presentacion__link" 
                     href = "https://www.linkedin.com/in/cesar-raul-valdivia-huayllas/">
                     <img src = "./assets/linkedin.png" alt = "Icono de LinkedIn">
                     LinkedIn</a>
 
+                    <!-- Enlace a perfil de GitHub -->
                     <a class = "presentacion__link" 
                     href = "https://github.com/CesarRaulVH/">
                     <img src = "./assets/github.png" alt = "Icono de GitHub">
@@ -46,9 +66,11 @@
                 </section>
             </section>
             
-                <img class = "presentacion__imagen" src = "./assets/foto-perfil.png" alt = "Foto profesional de César Raúl Valdivia Huayllas">
+            <!-- Imagen de perfil -->
+            <img class = "presentacion__imagen" src = "./assets/foto-perfil.png" alt = "Foto profesional de César Raúl Valdivia Huayllas">
         </main>
 
+        <!-- Pie de página -->
         <footer class = "footer">
             <p>Desarrollado por César Raúl</p>
         </footer>

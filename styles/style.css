@@ -1,26 +1,43 @@
+/* ================================
+   Importación de fuentes de Google
+   ================================ */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* ================================
+   Ajuste base del tamaño de fuente
+   ================================ */
+/* 62.5% hace que 1rem equivalga a 10px para facilitar cálculos */
 html
 {
     font-size: 62.5%;
 }
 
+/* ================================
+   Variables globales (CSS Custom Properties)
+   ================================ */
 :root
 {
+    /* Colores principales */
     --color-fondo: #000000;
     --color-texto: #F6F6F6;
     --color-principal: #22D4FD;
     --color-hover: #272727;
 
+    /* Fuentes personalizadas */
     --fuente-titulos: "Krona One", "Times New Roman";
     --fuente-textos: "Montserrat", "Times New Roman";
 
+    /* Tamaños de tipografía */
     --tamaño-titulos: 3.6rem;
     --tamaño-texto: 2.4rem;
 
+    /* Espaciado estándar entre elementos */
     --espacio-elementos: 2rem;
 }
 
+/* ================================
+   Reset básico de márgenes y paddings
+   ================================ */
 *
 {
     margin: 0;
@@ -28,11 +45,17 @@ html
     box-sizing: border-box;
 }
 
+/* ================================
+   Fondo general del sitio
+   ================================ */
 .body
 {
     background-color: var(--color-fondo);
 }
 
+/* ================================
+   Encabezado
+   ================================ */
 .header
 {
     padding: 2.5% 0% 0% 15%;
@@ -41,7 +64,7 @@ html
 .header__menu
 {
     display: flex;
-    gap: 8rem;
+    gap: 8rem; /* Espaciado entre enlaces del menú */
 }
 
 .header__link
@@ -54,11 +77,15 @@ html
     gap: var(--espacio-elementos);
 }
 
+/* Efecto al pasar el cursor sobre enlaces del encabezado */
 .header__link:hover
 {
     color: var(--color-texto);
 }
 
+/* ================================
+   Sección principal de presentación
+   ================================ */
 .presentacion
 {
     display: flex;
@@ -82,6 +109,8 @@ html
     gap: var(--espacio-elementos);
 }
 
+
+/* Título principal */
 .presentacion__titulo1
 {
     font-family: var(--fuente-titulos);
@@ -89,6 +118,7 @@ html
     color: var(--color-texto);
 }
 
+/* Título secundario */
 .presentacion__titulo2
 {
     font-family: var(--fuente-titulos);
@@ -96,11 +126,13 @@ html
     color: var(--color-texto);
 }
 
+/* Texto destacado en títulos */
 .presentacion__titulo--destaque
 {
     color: var(--color-principal);
 }
 
+/* Párrafos de presentación */
 .presentacion__parrafo
 {
     font-family: var(--fuente-textos);
@@ -108,6 +140,7 @@ html
     color: var(--color-texto);
 }
 
+/* Contenedor de enlaces a redes */
 .presentacion__enlaces
 {
     display: flex;
@@ -116,6 +149,7 @@ html
     gap: var(--espacio-elementos);
 }
 
+/* Botones/enlaces de redes sociales */
 .presentacion__link
 {
     display: flex;
@@ -134,18 +168,23 @@ html
     background-color: var(--color-fondo);
 }
 
+/* Efecto hover en botones/enlaces */
 .presentacion__link:hover
 {
     transform: scale(1.025);
     background-color: var(--color-fondo);
 }
 
+/* Imagen de presentación */
 .presentacion__imagen
 {
     width: 55%;
     height: 55%;
 }
 
+/* ================================
+   Pie de página
+   ================================ */
 .footer
 {
     padding: 2rem;
@@ -156,6 +195,9 @@ html
     background-color: var(--color-principal);
 }
 
+/* ================================
+   Estilos responsivos (pantallas pequeñas)
+   ================================ */
 @media (max-width: 1200px)
 {
     .header
@@ -171,7 +213,7 @@ html
     .presentacion
     {
         padding: 10% 5%;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse;  /* Imagen encima del texto */
     }
     
     .presentacion__contenido
@@ -179,6 +221,7 @@ html
         width: auto;
     }
 
+    /* Ajuste del tamaño de botones en pantallas pequeñas */
     .presentacion__link
     {
         width: 25rem;
